@@ -55,19 +55,25 @@ body {
 }
 
 .btn {
-    padding: 15px 46px;
-    border: none;
-    background: var(--primary-color);
-    border-radius: 999px;
-    font-weight: 400;
+    --height: 60px;
+
+    display: inline-block;
+    min-width: 205px;
+    height: var(--height);
+    padding: 0 20px;
+    border-radius: 99px;
+    border: 1px solid #2e80ce;
     font-size: 1.6rem;
-    line-height: 1.75;
+    font-weight: 400;
     text-align: center;
-    color: #FFFFFF;
+    line-height: var(--height);
+    color: #fff;
+    background: #2e80ce;
 }
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .container {
@@ -79,7 +85,6 @@ body {
 a {
     text-decoration: none;
 }
-
 
 /* -------------- Header -------------- */
 .header {
@@ -195,8 +200,8 @@ a {
 }
 
 .header-action__signup {
-    padding: 15px 46px;
-    cursor: pointer;
+    --height: 44px;
+    min-width: 104px;
 }
 
 /* -------------- Hero -------------- */
@@ -264,3 +269,86 @@ a {
     line-height: 1.67;
     color: #FFFFFF;
 }
+/* -------------- Service -------------- */
+.service {
+    padding: 170px 0;
+}
+
+.service__heading {
+    text-align: center;
+}
+
+.service__desc {
+    margin: 18px auto 0;
+    width: 468px;
+    text-align: center;
+}
+
+.service__row {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.service__list {
+    margin-bottom: 55px;
+}
+
+/* Service item */
+.service-item {
+    display: flex;
+    padding: 22px;
+    width: 470px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    transition: .25s;
+}
+
+.service-item:hover {
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.service-item:hover .service-item__icon {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.service-item__icon {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #EFF6FD;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    color: #10375C;
+    transition: .25s
+}
+
+.service-item__body {
+    margin-left: 20px;
+}
+
+.service-item__heading {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.27;
+    color: #10375C;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+}
+
+
